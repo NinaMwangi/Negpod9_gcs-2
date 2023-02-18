@@ -1,4 +1,3 @@
 #!/bin/bash
 file="happy.txt"
-echo "Happy New Year Recipient_name!" > happy.txt
-echo "May the coming year be full of grand adventures and opportunities" > happy.txt
+echo "Happy New Year Recipient_name!\nMay the coming year be full of grand adventures and opportunities" > happy.txt
