@@ -1,0 +1,8 @@
+#!/bin/bash
+path=('take a path')
+if [[ -d $path ]];
+then
+ls $path
+else
+echo "Please, give a file path of a directory"
+fi
