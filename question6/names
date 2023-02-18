@@ -1,0 +1,9 @@
+#!/bin/bash
+file="names.txt"
+echo "Maxime" > names.txt
+echo "Nina" > names.txt
+echo "Cynthia" > names.txt
+echo "Kur" > names.txt
+echo "Islam" > names.txt
+echo "Tesfahun" > names.txt
+echo "Ange" > names.txt
