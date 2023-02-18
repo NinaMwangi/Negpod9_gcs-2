@@ -1,8 +1,12 @@
 #!/bin/bash
-path=('take a path')
+read -p "Enter a path: " path
 if [[ -d $path ]];
 then
-ls $path
+	echo "Files in $path: "
+	ls "$path"
 else
-echo "Please, give a file path of a directory"
+echo "$path is not a directory. Please, give a correct path of a directory"
+read -p "Eneter a path: " path
+echo "Files in $path: "
+ls "$path"
 fi
