@@ -1,0 +1,10 @@
+#!/bin/bash
+names="names.txt"
+template="happy.txt"
+sed 's/Recipient_name/Maxime/' happy.txt
+sed 's/Recipient_name/Nina/' happy.txt
+sed 's/Recipient_name/Cynthia/' happy.txt
+sed 's/Recipient_name/Kur/' happy.txt
+sed 's/Recipient_name/Islam/' happy.txt
+sed 's/Recipient_name/Tesfahun/' happy.txt
+sed 's/Recipient_name/Ange/' happy.txt
