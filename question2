@@ -1,22 +1,21 @@
 #!/bin/bash
 
-import random
-import math
-
 # Generate two random numbers
-num1 = random.randint(1, 100000)
-num2 = random.randint(1, 100000)
+number1=$((RANDOM % 100000))
+number2=$((RANDOM % 100000))
 
-# Compute the square roots of the numbers
-sqrt1 = int(math.sqrt(num1))
-sqrt2 = int(math.sqrt(num2))
+# Calculate square roots of the two numbers
+sqrt1=$(echo "scale=0; sqrt($number1)" | bc)
+sqrt2=$(echo "scale=0; sqrt($number2)" | bc)
 
-# Print the numbers and their square roots
-print(f"The first random number generated is {num1}")
-print(f"The square root is {sqrt1}")
-print(f"The second random number generated is {num2}")
-print(f"The square root is {sqrt2}")
+# Print the first number and its square root
+echo "The first random number generated is $number1"
+echo "The square root is $sqrt1"
 
-# Compute and print the sum of the square roots
-sum_sqrt = sqrt1 + sqrt2
-print(f"The sum of their square roots is {sum_sqrt}")
+# Print the second number and its square root
+echo "The second random number generated is $number2"
+echo "The square root is $sqrt2"
+
+# Calculate and print the sum of the square roots
+sum=$(expr $sqrt1 + $sqrt2)
+echo "The sum of their square roots is $sum"
